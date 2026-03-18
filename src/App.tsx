@@ -55,23 +55,24 @@ function Nav() {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full p-6 md:p-8 flex justify-between items-center z-50 transition-all duration-500"
+      className="fixed top-0 left-0 w-full px-4 py-4 md:p-6 lg:p-8 flex justify-between items-center z-50 transition-all duration-500"
       style={{
         background: scrolled ? 'rgba(2,0,8,0.8)' : 'transparent',
         backdropFilter: scrolled ? 'blur(20px)' : 'none',
         borderBottom: scrolled ? '1px solid rgba(255,255,255,0.05)' : '1px solid transparent',
       }}
     >
-      <div className="text-xl font-display font-bold tracking-tighter"
+      <div className="text-base md:text-xl font-display font-bold tracking-tighter"
         style={{
           background: 'linear-gradient(135deg, #7c3aed, #3b82f6)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
         }}>
-        Vansh Prajapati.
+        <span className="hidden sm:inline">Vansh Prajapati.</span>
+        <span className="sm:hidden">VP.</span>
       </div>
 
-      <div className="flex gap-8 text-sm font-display font-bold uppercase tracking-widest">
+      <div className="flex gap-4 md:gap-8 text-xs md:text-sm font-display font-bold uppercase tracking-widest">
         {[['#about', 'About'], ['#projects', 'Work'], ['#contact', 'Contact']].map(([href, label]) => (
           <a
             key={label}

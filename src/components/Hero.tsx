@@ -84,7 +84,7 @@ export default function Hero() {
               <span
                 key={word}
                 ref={(el) => { wordsRef.current[i] = el; }}
-                className="block text-[clamp(3rem,10vw,9rem)] font-display font-bold tracking-tighter leading-none"
+                className="block text-[clamp(2.2rem,10vw,9rem)] font-display font-bold tracking-tighter leading-none"
                 style={{
                   background: i === 1 || i === 3
                     ? 'linear-gradient(135deg, #7c3aed, #3b82f6)'
@@ -115,17 +115,17 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div ref={ctaRef} className="flex gap-4 justify-center flex-wrap">
+        <div ref={ctaRef} className="flex gap-3 md:gap-4 justify-center flex-wrap">
           <a
             href="#projects"
-            className="px-8 py-4 rounded-full font-display font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(124,58,237,0.5)]"
+            className="px-6 md:px-8 py-3.5 md:py-4 rounded-full font-display font-bold text-sm md:text-base text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(124,58,237,0.5)]"
             style={{ background: 'linear-gradient(135deg, #7c3aed, #3b82f6)' }}
           >
             View My Work
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 border border-white/20 font-display font-bold rounded-full hover:bg-white/10 transition-all duration-300 hover:border-white/40"
+            className="px-6 md:px-8 py-3.5 md:py-4 border border-white/20 font-display font-bold text-sm md:text-base rounded-full hover:bg-white/10 transition-all duration-300 hover:border-white/40"
           >
             Get in Touch
           </a>

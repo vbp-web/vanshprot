@@ -137,8 +137,8 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" ref={sectionRef} className="py-32 px-6 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+    <section id="contact" ref={sectionRef} className="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
 
         {/* ── Left side ── */}
         <div className="space-y-12">
@@ -147,7 +147,7 @@ export default function Contact() {
               style={{ color: '#7c3aed' }}>
               Get in Touch
             </div>
-            <h3 className="text-6xl md:text-8xl font-display font-bold tracking-tighter leading-none">
+            <h3 className="text-5xl md:text-6xl lg:text-8xl font-display font-bold tracking-tighter leading-none">
               LET'S<br />
               <span style={{
                 background: 'linear-gradient(135deg, #7c3aed, #3b82f6)',
@@ -159,14 +159,14 @@ export default function Contact() {
             </h3>
           </div>
 
-          <p ref={bodyRef} className="text-white/55 text-xl leading-relaxed max-w-md">
+          <p ref={bodyRef} className="text-white/55 text-base md:text-xl leading-relaxed max-w-md">
             Have a project in mind or just want to say hi? I'm always open to new
             opportunities and collaborations.
           </p>
 
           <div>
             <a href="mailto:prajapativansh804@gmail.com"
-              className="flex items-center gap-4 text-xl font-display font-bold group w-fit">
+              className="flex items-center gap-3 text-base md:text-xl font-display font-bold group w-fit break-all">
               <div className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                 style={{ border: '1px solid rgba(124,58,237,0.4)', background: 'rgba(124,58,237,0.1)' }}>
                 <Mail className="w-5 h-5" style={{ color: '#7c3aed' }} />
@@ -192,7 +192,7 @@ export default function Contact() {
         </div>
 
         {/* ── Right: Form ── */}
-        <div ref={formRef} className="rounded-3xl p-10 md:p-12 relative overflow-hidden"
+        <div ref={formRef} className="rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12 relative overflow-hidden"
           style={{
             background: 'rgba(15, 10, 30, 0.85)',
             border: '1px solid rgba(124,58,237,0.3)',

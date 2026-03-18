@@ -71,21 +71,21 @@ export default function Projects() {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-32 px-6 max-w-7xl mx-auto">
-      <div className="mb-20">
+    <section ref={containerRef} className="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto">
+      <div className="mb-10 md:mb-20">
         <h2 className="text-accent font-display font-medium tracking-widest uppercase text-sm mb-4">
           Selected Work
         </h2>
-        <h3 className="text-5xl md:text-7xl font-display font-bold tracking-tighter">
+        <h3 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold tracking-tighter">
           PROJECTS
         </h3>
       </div>
 
-      <div className="space-y-40">
+      <div className="space-y-20 md:space-y-40">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-card grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+            className="project-card grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-center"
           >
             <div className={`order-2 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
               <div className="space-y-6">
@@ -95,7 +95,7 @@ export default function Projects() {
                   </span>
                   <div className="h-px flex-1 bg-white/10" />
                 </div>
-                <h4 className="text-4xl md:text-5xl font-display font-bold tracking-tight">
+                <h4 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold tracking-tight leading-tight">
                   {project.title}
                 </h4>
                 <p className="text-white/60 text-lg leading-relaxed">

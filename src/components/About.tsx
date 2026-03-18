@@ -46,7 +46,7 @@ const COMMANDS: { cmd: string; output: string; color: string }[] = [
   { cmd: 'whoami', output: 'Vansh Prajapati', color: '#a78bfa' },
   { cmd: 'cat role.txt', output: 'Creative Developer & Designer', color: '#60a5fa' },
   { cmd: 'cat skills.txt', output: 'React · Three.js · GSAP · Node · TypeScript', color: '#34d399' },
-  { cmd: 'cat experience.txt', output: '5+ years of creative development', color: '#fbbf24' },
+  { cmd: 'cat experience.txt', output: '1 years of creative development', color: '#fbbf24' },
   { cmd: 'echo $LOCATION', output: 'India 🇮🇳  (Remote Friendly)', color: '#f472b6' },
   { cmd: 'echo $STATUS', output: '🟢 Available for work', color: '#4ade80' },
   { cmd: 'git log --oneline -1', output: 'feat: crafting immersive digital worlds', color: '#a78bfa' },
@@ -244,7 +244,7 @@ function RevealLines({ lines }: { lines: string[] }) {
         <div key={i} className="overflow-hidden">
           <span
             ref={(el) => { lineRefs.current[i] = el; }}
-            className="block text-3xl md:text-4xl font-display font-bold leading-tight"
+            className="block text-2xl md:text-3xl lg:text-4xl font-display font-bold leading-tight"
           >
             {line}
           </span>
@@ -285,18 +285,18 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={containerRef} className="py-32 px-6 max-w-7xl mx-auto overflow-hidden relative">
+    <section id="about" ref={containerRef} className="py-16 md:py-32 px-4 md:px-6 max-w-7xl mx-auto overflow-hidden relative">
       {/* Subtle dark background so text is readable over galaxy */}
       <div className="absolute inset-0 -z-10 rounded-3xl pointer-events-none"
         style={{ background: 'rgba(2,0,8,0.45)' }} />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
         {/* ── Left: Live terminal ── */}
         <TerminalCard />
 
         {/* ── Right: Text content ── */}
         <div
-          className="space-y-10 rounded-3xl p-8 md:p-10 relative overflow-hidden"
+          className="space-y-8 md:space-y-10 rounded-2xl md:rounded-3xl p-6 md:p-10 relative overflow-hidden"
           style={{
             background: 'rgba(15, 10, 30, 0.82)',
             border: '1px solid rgba(124,58,237,0.22)',
@@ -323,7 +323,7 @@ export default function About() {
             ]} />
           </div>
 
-          <p ref={bodyRef} className="text-white/65 text-lg leading-relaxed max-w-xl relative z-10">
+          <p ref={bodyRef} className="text-white/65 text-base md:text-lg leading-relaxed max-w-xl relative z-10">
             With over 5 years of experience in creative development, I specialize in crafting
             high-performance web experiences using React, Three.js, and GSAP — where engineering
             precision meets artistic vision.

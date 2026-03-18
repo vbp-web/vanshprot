@@ -324,7 +324,7 @@ export default function About() {
           </div>
 
           <p ref={bodyRef} className="text-white/65 text-base md:text-lg leading-relaxed max-w-xl relative z-10">
-            With over 5 years of experience in creative development, I specialize in crafting
+            With over 1 years of experience in creative development, I specialize in crafting
             high-performance web experiences using React, Three.js, and GSAP — where engineering
             precision meets artistic vision.
           </p>
